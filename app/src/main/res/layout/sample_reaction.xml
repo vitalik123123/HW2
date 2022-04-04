@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/reaction_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/reaction_bg_unselected"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/reaction_smile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😊" />
+
+        <TextView
+            android:id="@+id/reaction_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:text="2" />
+
+    </LinearLayout>
+
+</FrameLayout>

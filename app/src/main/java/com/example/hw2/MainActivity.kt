@@ -1,20 +1,25 @@
 package com.example.hw2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.sample_reaction.*
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.hw2.databinding.ActivityMainBinding
+import com.example.hw2.databinding.FragmentChatLogBinding
+import com.example.hw2.databinding.MessageBinding
+import com.example.hw2.databinding.SampleReactionBinding
 
 class MainActivity : AppCompatActivity() {
 
-    var isColor = true
+    lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
+        binding = ActivityMainBinding.inflate(layoutInflater)
 
+        setContentView(binding.root)
 
-
+        supportFragmentManager.beginTransaction().replace(R.id.root, ChatLogFragment.newInstance()).commit()
     }
 }

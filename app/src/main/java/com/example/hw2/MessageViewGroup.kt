@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.*
 
-class MyViewGroup@JvmOverloads constructor(
+class MessageViewGroup@JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyle: Int = 0
@@ -23,7 +23,6 @@ class MyViewGroup@JvmOverloads constructor(
 
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
-        checkCountChild()
 
         firstChild?.let { countMeasureChild(it, widthMeasureSpec, heightMeasureSpec) }
         secondChild?.let { countMeasureChild(it, widthMeasureSpec, heightMeasureSpec) }
@@ -131,7 +130,5 @@ class MyViewGroup@JvmOverloads constructor(
         return p is MarginLayoutParams
     }
 
-    private fun checkCountChild() {
-        if (childCount > 4) error("more 4 child")
-    }
+
 }

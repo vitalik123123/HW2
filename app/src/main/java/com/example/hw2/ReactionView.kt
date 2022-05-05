@@ -6,7 +6,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import androidx.appcompat.widget.AppCompatTextView
 
-class MyView @JvmOverloads constructor(
+class ReactionView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyle: Int = 0
@@ -18,11 +18,11 @@ class MyView @JvmOverloads constructor(
 
 
     init {
-        val typedArray: TypedArray = context.obtainStyledAttributes(attrs, R.styleable.MyView)
+        val typedArray: TypedArray = context.obtainStyledAttributes(attrs, R.styleable.ReactionView)
 
-        mySmile = typedArray.getString(R.styleable.MyView_smile)
-        myCountReaction = typedArray.getInt(R.styleable.MyView_countReaction, 0)
-        mySelectedView = typedArray.getBoolean(R.styleable.MyView_selectedView, true)
+        mySmile = typedArray.getString(R.styleable.ReactionView_smile)
+        myCountReaction = typedArray.getInt(R.styleable.ReactionView_countReaction, 0)
+        mySelectedView = typedArray.getBoolean(R.styleable.ReactionView_selectedView, true)
 
         text = "$mySmile $myCountReaction"
 

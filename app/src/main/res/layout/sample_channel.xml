@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rootSampleChannel"
+    >
+
+    <TextView
+        android:id="@+id/sampleChannelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sample_channel"
+        android:padding="5dp"
+        android:textSize="18sp"
+        >
+
+    </TextView>
+
+</FrameLayout>

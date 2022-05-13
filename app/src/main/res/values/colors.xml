@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey_select">#878787</color>
     <color name="blue_select">#193BBA</color>
+    <color name="background_bottom_navigation">#515151</color>
+    <color name="checked_bottom_navigation">#FFFFFF</color>
+    <color name="unchecked_bottom_navigation">#8C8C8C</color>
+    <color name="background_frame_bottom_navigation">#E3736B</color>
 </resources>

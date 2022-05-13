@@ -3,21 +3,16 @@ package com.example.hw2
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.hw2.databinding.MessageBinding
 
 class MessagesAdapter(private val messagesList: ArrayList<MessageInfo>): RecyclerView.Adapter<MessagesAdapter.ViewHolder>() {
-
-   private lateinit var binding: MessageBinding
-
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MessagesAdapter.ViewHolder {
 
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.message, parent, false)
-        return ViewHolder(v)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.sample_message, parent, false)
+        return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: MessagesAdapter.ViewHolder, position: Int) {

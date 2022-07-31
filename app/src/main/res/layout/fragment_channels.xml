@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/rootChannels"
-    tools:context=".ChannelsFragment">
+    android:padding="5dp"
+    tools:context=".fragmets.ChannelsFragment">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/channelsSearch"

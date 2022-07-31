@@ -6,8 +6,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/rootChatLog"
-    tools:context=".ChatLogFragment">
+    tools:context=".fragmets.ChatLogFragment">
 
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvChatLog"
+        android:src="@drawable/ic_back"
+        >
+
+    </androidx.appcompat.widget.AppCompatImageView>
 
     <TextView
         android:id="@+id/tvChatLog"
@@ -17,7 +31,7 @@
         android:layout_margin="10dp"
         android:text="@string/Sample_channel"
         android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backChat"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         >

@@ -13,4 +13,5 @@
     <color name="checked_bottom_navigation">#FFFFFF</color>
     <color name="unchecked_bottom_navigation">#8C8C8C</color>
     <color name="background_frame_bottom_navigation">#E3736B</color>
+    <color name="background_sample_message">#4AE150</color>
 </resources>

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/rootPeople"
-    tools:context=".PeopleFragment">
+    tools:context=".fragmets.PeopleFragment">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/peopleSearch"

@@ -1,11 +1,11 @@
-package com.example.hw2
+package com.example.hw2.fragmets
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.FragmentManager
+import com.example.hw2.R
 import com.example.hw2.databinding.FragmentBottomNavigationBinding
 
 
@@ -25,17 +25,29 @@ class BottomNavigationFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.bottomNavigationView.selectedItemId = R.id.bnMenuChannels
-        childFragmentManager.beginTransaction().replace(R.id.frameOnBottomNavigation, ChannelsFragment.newInstance()).commit()
+        childFragmentManager.beginTransaction().replace(
+            R.id.frameOnBottomNavigation,
+            ChannelsFragment.newInstance()
+        ).commit()
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.bnMenuChannels -> {
-                    childFragmentManager.beginTransaction().replace(R.id.frameOnBottomNavigation, ChannelsFragment.newInstance()).commit()
+                    childFragmentManager.beginTransaction().replace(
+                        R.id.frameOnBottomNavigation,
+                        ChannelsFragment.newInstance()
+                    ).commit()
                 }
                 R.id.bnMenuPeople -> {
-                    childFragmentManager.beginTransaction().replace(R.id.frameOnBottomNavigation, PeopleFragment.newInstance()).commit()
+                    childFragmentManager.beginTransaction().replace(
+                        R.id.frameOnBottomNavigation,
+                        PeopleFragment.newInstance()
+                    ).commit()
                 }
                 R.id.bnMenuProfile -> {
-                    childFragmentManager.beginTransaction().replace(R.id.frameOnBottomNavigation, ProfileFragment.newInstance()).commit()
+                    childFragmentManager.beginTransaction().replace(
+                        R.id.frameOnBottomNavigation,
+                        ProfileFragment.newInstance()
+                    ).commit()
                 }
             }
             true

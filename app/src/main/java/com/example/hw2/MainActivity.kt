@@ -3,6 +3,7 @@ package com.example.hw2
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hw2.databinding.ActivityMainBinding
+import com.example.hw2.fragmets.BottomNavigationFragment
 
 class MainActivity : AppCompatActivity() {
 

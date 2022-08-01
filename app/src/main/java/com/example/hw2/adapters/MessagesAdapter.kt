@@ -15,6 +15,7 @@ class MessagesAdapter(): RecyclerView.Adapter<MessagesAdapter.ViewHolder>() {
 
     fun setData(arrMessagesList: List<MessageInfo>){
         messagesArrayList = arrMessagesList as ArrayList<MessageInfo>
+        notifyDataSetChanged()
     }
 
     fun addMessage(message: MessageInfo, position: Int){
